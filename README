@@ -1,0 +1,43 @@
+israelbenattar
+israel benattar
+EX: 2
+
+FILES:
+
+uthreads.cpp -- an user-level thread library.
+
+
+REMARKS:
+
+ANSWERS:
+
+Q1:
+when running merge-sort, its' reasonable because Context switch time is less, and in general
+User level threads are cheap and fast, and UUser level thread does not require kernel mode privileges.
+They can run on any operating system
+
+Q2:
+advantages:
+Multiple processes without using threads use more resources.
+in multiple processes each process operates independently of the others.
+One thread can read, write or change another thread's data.
+high overhead: all operations require a kernel trap, significant work
+
+disadvantages:
+In multiple processing environments, each process executes the same code but has its own memory and file resources.
+Thread is light weight, taking lesser resources than a process.
+All threads can share same set of open files, child processes.
+Multiple threaded processes use fewer resources.
+medium overhead: operations require a kernel trap, but little work.
+
+Q3:
+The signals and interrupts that are being involved are the SIGTERM signal that are triggered by user input using
+the keyboard that sending a signal to the OS then the OS handle the signal by carefully closing the process that
+are connected to the pid that the user insert (unless the default beaver was changed).
+
+Q4:
+real time is the time possesing in the system, whille virtual time is the time the process will run with no
+interuptions,
+using real time can be with time sharing, by aloocating time for each process.
+using virtual time can be with a process that dealing with reality time like
+a process that inerpert a live video stream.

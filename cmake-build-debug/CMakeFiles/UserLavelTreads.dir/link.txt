@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/UserLavelTreads.dir/uthreads.cpp.o CMakeFiles/UserLavelTreads.dir/main.cpp.o -o UserLavelTreads.exe -Wl,--out-implib,libUserLavelTreads.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
